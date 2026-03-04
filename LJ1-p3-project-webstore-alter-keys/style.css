@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+body {
+	height: 200vh;
+	background-color: #3b3291;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding: 0 5%;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+header img {
+	width: 7.6vw;
+}
+header nav {
+	display: flex;
+	gap: 30px;
+}
+header nav a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 8px 16px;
+	border-radius: 8px;
+	transition: 0.3s;
+	color: white;
+}
+header nav a:hover {
+	background: #5247b9;
+}
+header nav:hover > a:not(:hover) {
+	background: none;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown a {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background-color: inherit;
+	cursor: pointer;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border-radius: 8px;
+	top: 33px;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #dcdcdc;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.bg-asset {
+	display: flex;
+	height: 100dvh;
+	background: linear-gradient(to top, #d2e2fb 30%, #86a8db);
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-asset img {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	pointer-events: none;
+}
+
+.bg-asset .title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 8vh;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	pointer-events: none;
+	font-weight: 700;
+}
+
+.about {
+	padding: 50px;
+	background: #3b3291;
+	color: white;
+	position: relative;
+	z-index: 100;
+}
+.about h2 {
+	font-size: 40px;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #5247b9;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	z-index: 1000;
+	font-weight: 600;
+};
+
